@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BioPass</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<style type='text/css'>
+	html, body {
+		height: 100%;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+		overflow-x: hidden;
+	}
+	#main-container {
+		background-color: #000 !important;
+		/*height: 100%;*/
+		width: 100%;
+	}
+
+.tech {
+    position: absolute;
+    top: 800px;
+    left: 47%;
+    margin-top: -372px;
+    margin-left: -372.5px;
+    z-index: 0;
+    width: 840px;
+    height: 800px;
+    background-image: url("globe.png");
+    -webkit-animation-name: rotating;
+    animation-name: rotating;
+    -webkit-animation-duration: 100s;
+    animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+@-webkit-keyframes mapPinEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mapPinEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes tick {
+  0%, 100% {
+    background-color: rgba(255,190,16,0);
+  }
+
+  50% {
+    background-color: rgba(255,190,16,.2);
+  }
+}
+
+@keyframes tick {
+  0%, 100% {
+    background-color: rgba(255,190,16,0);
+  }
+
+  50% {
+    background-color: rgba(255,190,16,.2);
+  }
+}
+
+@-webkit-keyframes tick-up {
+  0%, 100% {
+    background-color: rgba(27,198,124,0);
+  }
+
+  50% {
+    background-color: rgba(27,198,124,.2);
+  }
+}
+
+@keyframes tick-up {
+  0%, 100% {
+    background-color: rgba(27,198,124,0);
+  }
+
+  50% {
+    background-color: rgba(27,198,124,.2);
+  }
+}
+
+@-webkit-keyframes tick-down {
+  0%, 100% {
+    background-color: rgba(232,86,86,0);
+  }
+
+  50% {
+    background-color: rgba(232,86,86,.2);
+  }
+}
+
+@keyframes tick-down {
+  0%, 100% {
+    background-color: rgba(232,86,86,0);
+  }
+
+  50% {
+    background-color: rgba(232,86,86,.2);
+  }
+}
+
+
+#huge {
+	    color: #497794;
+    font-size: 200px;
+    /* z-index: -1; */
+    /* position: absolute; */
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 0px;
+}
+
+#main-container {
+	position: absolute;
+	min-height: 1500px;
+}
+#header {
+	width: 100%;
+	text-align: center;
+}
+
+#header i {
+	    font-size: 2em;
+    color: #497794;
+    position: relative;
+    top: -45px;
+}
+#explanation p {
+	    margin-top: 1000px;
+    color: #fff;
+    text-align: justify;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 1.2;
+    font-size: 2em;
+}
+</style>
+
+
+
+</head>
+<body>
+<!--- for the gods of all that is timely and tidy. Please excuse my code.
+No time to separate in files.
+-->
+<div id="main-container">
+<div class="tech"></div>
+<div id="header">
+<h1 id='huge'>BioPass</h1>
+<br />
+<i>The login of the future</i>
+</div>
+<div id='explanation'>
+<p>
+Login into any website using only your fingeprint. Biometrics are not a field of only the goverment and academics anymore. In recent years, advancements of technology have enable mass use of powerful sensors such as synaptics fingerprint sensor. Now we need to exploit this power by creating the next generation of services. Our product's security relies in industry standard encryption algorithms and best practices.
+Our fingerprint matching technology is built on top of open source code developed by the United States Goverments Federal Agency. Although we do not own the intellectual property of many of those algorithms - since they are widely academically known -, our message platform and communication system with web browser is unique.
+</p>
+</div>
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>
